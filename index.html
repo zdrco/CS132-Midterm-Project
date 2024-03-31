@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number System Converter</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="heading-wrapper">
+          <div id="heading">
+            <h1 id="title">Number System Converter</h1>
+            <span class="creator">&copy Zydric Abel</span>
+          </div>
+      </div>
+      <div id="option">
+        <select id="from">
+          <option value="decimal" class="dec">Decimal</option>
+          <option value="binary" class="bin">Binary</option>
+          <option value="octal" class="oct">Octal</option>
+          <option value="hexadecimal" class="hex">Hexadecimal</option>
+        </select>
+
+        <span class="material-symbols-outlined span">east</span>
+        <select id="to">
+          <option value="binary" class="bin">Binary</option>
+          <option value="decimal" class="dec">Decimal</option>
+          <option value="octal" class="oct">Octal</option>
+          <option value="hexadecimal" class="hex">Hexadecimal</option>
+        </select>
+      </div>
+
+      <div class="wave-group" id="input-container">
+        <input required="" type="text" class="input" id="textbox">
+        <span class="bar"></span>
+        <label class="label">
+          <span class="label-char" style="--index: 0">Input v</span>
+          <span class="label-char" style="--index: 1">a</span>
+          <span class="label-char" style="--index: 2">l</span>
+          <span class="label-char" style="--index: 3">ue</span>
+        </label>
+      </div>
+
+      <div id="error-container">
+        <p id="error"></p>
+      </div>
+
+      <div id="button-container">
+        <button class="pushable" id="reset-button">
+            <span class="shadow2"></span>
+            <span class="edge2"></span>
+            <span class="front2">
+              Reset
+            </span>
+          </button>
+
+          <button class="pushable" id="button" >
+            <span class="shadow1"></span>
+            <span class="edge1"></span>
+            <span class="front1">
+              Convert
+            </span>
+          </button>
+  
+          <button class="pushable" id="swap-button">
+            <span class="shadow3"></span>
+            <span class="edge3"></span>
+            <span class="front3">
+              Swap
+            </span>
+          </button>
+      </div>
+
+      <div id="output">
+        <label for="ans" class="ans-label">Result:</label>
+        <div id="ans">
+          <p id="answer"></p>
+        </div>
+
+        <div class="copy-wrapper">
+          <button id="copy-button" onclick="copyText()">
+            <span class="material-symbols-outlined">content_copy</span>
+          </button>
+        </div>
+      </div>
+    
+      <div class="checkbox-wrapper-46" id="digit-grouping-container">
+        <input type="checkbox" id="digit-grouping" class="inp-cbx" />
+        <label for="digit-grouping" class="cbx">
+          <span>
+            <svg viewBox="0 0 12 10" height="10px" width="12px">
+              <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
+          </span><span>Group Digits</span>
+        </label>
+      </div>
+
+      <script src="script.js"></script>
+  </body>
+</html>
